@@ -131,7 +131,8 @@ relying on them.</em></p>
     <h3>Send me an address. I'll tell you which number the appraiser will use.</h3>
     <p>The appraisal district figure, what a measured floor plan would likely show, and the down/up split that decides how the house actually lives.</p>
     <!-- TODO(kelli): set action= to your form endpoint. Inert until then. -->
-    <form method="POST" action="#">
+    <form method="POST" action="/api/contact" data-ghl>
+      <div class="hp" aria-hidden="true"><label>Website<input type="text" name="website" tabindex="-1" autocomplete="off"></label></div>
       <div class="field-row">
         <div class="field">
           <label for="c-name">Your name</label>
@@ -188,5 +189,6 @@ const t=document.getElementById('navtoggle'),n=document.getElementById('nav');
 t.onclick=()=>{const o=n.classList.toggle('open');t.setAttribute('aria-expanded',o);t.textContent=o?'\u2715':'\u2630'};
 n.querySelectorAll('a').forEach(a=>a.onclick=()=>{n.classList.remove('open');t.textContent='\u2630';t.setAttribute('aria-expanded','false')});
 </script>
+<script defer src="../js/forms.js"></script>
 </body>
 </html>

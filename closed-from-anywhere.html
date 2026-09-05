@@ -235,7 +235,8 @@
 
   <!-- TODO(kelli): point action= at your CRM/Formspree endpoint, or swap this whole
        block for your RON platform's booking embed. As written the form does nothing. -->
-  <form class="capture" method="POST" action="#" style="background:rgba(255,255,255,.04);border-color:rgba(201,169,97,.28)">
+  <form class="capture" method="POST" action="/api/contact" data-ghl style="background:rgba(255,255,255,.04);border-color:rgba(201,169,97,.28)">
+      <div class="hp" aria-hidden="true"><label>Website<input type="text" name="website" tabindex="-1" autocomplete="off"></label></div>
     <div class="field-row">
       <div class="field">
         <label for="b-name" style="color:rgba(255,255,255,.62)">Your name</label>
@@ -301,5 +302,6 @@ const t=document.getElementById('navtoggle'),n=document.getElementById('nav');
 t.onclick=()=>{const o=n.classList.toggle('open');t.setAttribute('aria-expanded',o);t.textContent=o?'✕':'☰'};
 n.querySelectorAll('a').forEach(a=>a.onclick=()=>{n.classList.remove('open');t.textContent='☰';t.setAttribute('aria-expanded','false')});
 </script>
+<script defer src="./js/forms.js"></script>
 </body>
 </html>

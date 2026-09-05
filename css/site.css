@@ -343,3 +343,13 @@ section{padding:96px 0}
 /* real monogram replaces the CSS wordmark */
 .brand img{height:34px;width:auto;display:block}
 @media(max-width:760px){.brand img{height:28px}}
+
+/* ---------- form status ---------- */
+.form-status{margin:16px 0 0;font-size:13.5px;line-height:1.6}
+.form-status[data-state="busy"]{color:var(--ink-soft)}
+.form-status[data-state="ok"]{color:#1F7A4D;font-weight:600}
+.form-status[data-state="err"]{color:#A33B3B;font-weight:600}
+.gcapture .form-status[data-state="ok"]{color:#7FD3A6}
+.gcapture .form-status[data-state="err"]{color:#F0A0A0}
+.hp{position:absolute!important;left:-9999px!important;width:1px!important;height:1px!important;
+  overflow:hidden!important}

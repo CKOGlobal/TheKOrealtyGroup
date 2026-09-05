@@ -118,5 +118,6 @@ const t=document.getElementById('navtoggle'),n=document.getElementById('nav');
 t.onclick=()=>{const o=n.classList.toggle('open');t.setAttribute('aria-expanded',o);t.textContent=o?'\u2715':'\u2630'};
 n.querySelectorAll('a').forEach(a=>a.onclick=()=>{n.classList.remove('open');t.textContent='\u2630';t.setAttribute('aria-expanded','false')});
 </script>
+<script defer src="../js/forms.js"></script>
 </body>
 </html>

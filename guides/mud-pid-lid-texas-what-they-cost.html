@@ -192,7 +192,8 @@ legal advice.</em></p>
     <h3>Send me an address. I'll pull every taxing jurisdiction on it.</h3>
     <p>Ten minutes of my time, and you'll know the real total rate before you write — including whether there's a PID that won't show up on the tax table.</p>
     <!-- TODO(kelli): set action= to your form endpoint. Inert until then. -->
-    <form method="POST" action="#">
+    <form method="POST" action="/api/contact" data-ghl>
+      <div class="hp" aria-hidden="true"><label>Website<input type="text" name="website" tabindex="-1" autocomplete="off"></label></div>
       <div class="field-row">
         <div class="field">
           <label for="c-name">Your name</label>
@@ -249,5 +250,6 @@ const t=document.getElementById('navtoggle'),n=document.getElementById('nav');
 t.onclick=()=>{const o=n.classList.toggle('open');t.setAttribute('aria-expanded',o);t.textContent=o?'\u2715':'\u2630'};
 n.querySelectorAll('a').forEach(a=>a.onclick=()=>{n.classList.remove('open');t.textContent='\u2630';t.setAttribute('aria-expanded','false')});
 </script>
+<script defer src="../js/forms.js"></script>
 </body>
 </html>

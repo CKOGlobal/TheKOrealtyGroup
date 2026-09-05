@@ -384,7 +384,8 @@
 
   <!-- TODO(kelli): point action= at your CRM/Formspree endpoint before launch.
        As written this form does nothing. See README. -->
-  <form class="capture" method="POST" action="#" id="valuation-form">
+  <form class="capture" method="POST" action="/api/contact" data-ghl id="valuation-form">
+      <div class="hp" aria-hidden="true"><label>Website<input type="text" name="website" tabindex="-1" autocomplete="off"></label></div>
     <div class="field-row">
       <div class="field">
         <label for="v-name">Your name</label>
@@ -474,5 +475,6 @@ const t=document.getElementById('navtoggle'),n=document.getElementById('nav');
 t.onclick=()=>{const o=n.classList.toggle('open');t.setAttribute('aria-expanded',o);t.textContent=o?'✕':'☰'};
 n.querySelectorAll('a').forEach(a=>a.onclick=()=>{n.classList.remove('open');t.textContent='☰';t.setAttribute('aria-expanded','false')});
 </script>
+<script defer src="./js/forms.js"></script>
 </body>
 </html>

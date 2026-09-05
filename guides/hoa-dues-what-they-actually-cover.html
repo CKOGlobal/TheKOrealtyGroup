@@ -129,7 +129,8 @@ resale certificate and your contract, and consult an attorney on anything bindin
     <h3>Under contract? Send me the resale certificate and I'll read it.</h3>
     <p>Reserves, pending assessments, litigation, and what the minutes actually say. Twenty minutes of reading that most buyers never do.</p>
     <!-- TODO(kelli): set action= to your form endpoint. Inert until then. -->
-    <form method="POST" action="#">
+    <form method="POST" action="/api/contact" data-ghl>
+      <div class="hp" aria-hidden="true"><label>Website<input type="text" name="website" tabindex="-1" autocomplete="off"></label></div>
       <div class="field-row">
         <div class="field">
           <label for="c-name">Your name</label>
@@ -186,5 +187,6 @@ const t=document.getElementById('navtoggle'),n=document.getElementById('nav');
 t.onclick=()=>{const o=n.classList.toggle('open');t.setAttribute('aria-expanded',o);t.textContent=o?'\u2715':'\u2630'};
 n.querySelectorAll('a').forEach(a=>a.onclick=()=>{n.classList.remove('open');t.textContent='\u2630';t.setAttribute('aria-expanded','false')});
 </script>
+<script defer src="../js/forms.js"></script>
 </body>
 </html>

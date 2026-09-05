@@ -149,7 +149,8 @@
   with me.</p>
 
   <!-- TODO(kelli): point action= at your CRM/Formspree endpoint before launch. -->
-  <form class="capture" method="POST" action="#">
+  <form class="capture" method="POST" action="/api/contact" data-ghl>
+      <div class="hp" aria-hidden="true"><label>Website<input type="text" name="website" tabindex="-1" autocomplete="off"></label></div>
     <div class="field-row">
       <div class="field">
         <label for="n-name">Your name</label>
@@ -204,5 +205,6 @@ const t=document.getElementById('navtoggle'),n=document.getElementById('nav');
 t.onclick=()=>{const o=n.classList.toggle('open');t.setAttribute('aria-expanded',o);t.textContent=o?'✕':'☰'};
 n.querySelectorAll('a').forEach(a=>a.onclick=()=>{n.classList.remove('open');t.textContent='☰';t.setAttribute('aria-expanded','false')});
 </script>
+<script defer src="../js/forms.js"></script>
 </body>
 </html>
