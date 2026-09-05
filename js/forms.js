@@ -28,7 +28,21 @@
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(data)
       })
-        .then(function (r) { return r.json().catch(function () { return { ok: false }; }); })
+        .then(function (r) {
+          return r.text().then(function (t) {
+            var j;
+            try { j = JSON.parse(t); } catch (e) { j = { ok: false, error: 'bad_response' }; }
+            if (!j.ok) {
+              // Diagnostic only. These codes are safe — the function never
+              // returns upstream detail.
+              console.error('[contact] HTTP ' + r.status + ' —', j.error || t.slice(0, 120));
+              if (r.status === 404) console.error('[contact] /api/contact not deployed.');
+              if (j.error === 'not_configured') console.error('[contact] Env vars missing from this deployment. Redeploy.');
+              if (j.error === 'upstream') console.error('[contact] GoHighLevel rejected the request. Check token scopes and location id.');
+            }
+            return j;
+          });
+        })
         .then(function (j) {
           if (j && j.ok) {
             form.reset();
