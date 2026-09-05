@@ -35,6 +35,8 @@
  "mainEntityOfPage": "https://thekorealtygroup.com/guides/why-square-footage-doesnt-match.html"
 }
 </script>
+<script defer src="/_vercel/insights/script.js"></script>
+<script defer src="/_vercel/speed-insights/script.js"></script>
 </head>
 <body>
 
@@ -124,10 +126,37 @@ TREC License #616346. Square footage figures should be independently verified by
 relying on them.</em></p>
   </div>
 
-  <div class="cta-row" style="margin-top:46px">
-    <a class="btn btn-navy" href="../index.html#value">What is my home worth?</a>
-    <a class="btn btn-outline-navy" href="https://www.har.com/web/kelliowens" target="_blank" rel="noopener">Search the MLS</a>
-    <a class="btn btn-outline-navy" href="./index.html">More guides</a>
+  <div class="gcapture">
+    <h3>Send me an address. I'll tell you which number the appraiser will use.</h3>
+    <p>The appraisal district figure, what a measured floor plan would likely show, and the down/up split that decides how the house actually lives.</p>
+    <!-- TODO(kelli): set action= to your form endpoint. Inert until then. -->
+    <form method="POST" action="#">
+      <div class="field-row">
+        <div class="field">
+          <label for="c-name">Your name</label>
+          <input id="c-name" name="name" type="text" autocomplete="name" required>
+        </div>
+        <div class="field">
+          <label for="c-contact">Email or phone</label>
+          <input id="c-contact" name="contact" type="text" required>
+        </div>
+      </div>
+      <div class="field">
+        <label for="c-address">Property address</label>
+        <input id="c-address" name="address" type="text" autocomplete="street-address" required>
+      </div>
+      <input type="hidden" name="source" value="why-square-footage-doesnt-match">
+      <button class="btn btn-gold" type="submit" style="width:100%">Send it to me</button>
+      <p class="note">Kelli reads these herself. No drip campaign, no signup, no gate.</p>
+    </form>
+  </div>
+
+  <div class="related">
+    <h4>Keep reading</h4>
+    <div class="related-grid">
+      <a href="./hoa-dues-what-they-actually-cover.html"><b>The HOA Says $684 a Year. Here&#x27;s What That Number Doesn&#x27;t Tell You.</b><span>Annual dues are the least useful number in the packet. The resale certificate, the reserves, and…</span></a>
+      <a href="./flood-zone-x-x500-ae-galveston-county.html"><b>Zone X, X500, and AE — What Your Flood Determination Actually Means</b><span>Everything is in a flood zone. The question is which one, whether your lender will require insur…</span></a>
+    </div>
   </div>
 </div></article>
 
