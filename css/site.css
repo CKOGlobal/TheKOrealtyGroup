@@ -297,3 +297,12 @@ section{padding:96px 0}
   .prose > p:first-of-type{font-size:17.5px}
   .post{padding:26px 22px}
 }
+
+/* ---------- annotated list (signing prep) ---------- */
+.disc-list{list-style:none;margin:26px 0 0;padding:0;max-width:70ch}
+.disc-list li{position:relative;padding:20px 0 20px 30px;border-bottom:1px solid var(--line);
+  color:var(--ink-soft);font-size:15px;line-height:1.72}
+.disc-list li:last-child{border-bottom:0}
+.disc-list li::before{content:"";position:absolute;left:0;top:31px;width:16px;height:1px;
+  background:var(--gold)}
+.disc-list li b{color:var(--navy);font-weight:600}
