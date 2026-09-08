@@ -16,63 +16,6 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,400&family=Inter:wght@400;500;600&family=Pinyon+Script&display=swap" rel="stylesheet">
-<style>
-.kog-connect,.kog-bar{
-  /* Tokens must be declared on BOTH — .kog-bar is not a descendant of
-     .kog-connect, so it cannot inherit them. */
-  --kog-gold: var(--gold, #c9a961);
-  --kog-gold-br: var(--gold-br, #e3c684);
-  --kog-line: var(--line, #26231d);
-  --kog-card: var(--card, #131316);
-  --kog-ink: var(--ink, #f3efe6);
-  --kog-soft: var(--ink-soft, #9b9384);
-  --kog-dim: rgba(201,169,97,.28);
-}
-.kog-connect{padding:44px 0}
-.kog-connect .kog-kicker{
-  font-size:11px;letter-spacing:.26em;text-transform:uppercase;color:var(--kog-gold);
-  font-weight:700;display:inline-block;padding-bottom:13px;border-bottom:1px solid var(--kog-dim);
-  margin-bottom:18px}
-.kog-connect h2{
-  font-family:Georgia,"Iowan Old Style","Times New Roman",serif;font-weight:400;
-  font-size:clamp(1.5rem,3vw,2.1rem);margin:0;line-height:1.15;color:var(--kog-ink)}
-.kog-connect .kog-lede{
-  color:var(--kog-soft);max-width:56ch;margin:14px 0 0;line-height:1.65}
-
-.kog-actions{
-  display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));
-  gap:1px;background:var(--kog-line);border:1px solid var(--kog-line);margin-top:28px}
-.kog-act{
-  display:flex;flex-direction:column;gap:5px;background:var(--kog-card);
-  padding:20px 22px;text-decoration:none;color:var(--kog-ink);transition:background .16s}
-.kog-act:hover,.kog-act:focus-visible{background:#1a1a1e}
-.kog-act:focus-visible{outline:2px solid var(--kog-gold-br);outline-offset:-2px}
-.kog-act .kog-do{
-  font-size:10.5px;letter-spacing:.17em;text-transform:uppercase;color:var(--kog-gold)}
-.kog-act .kog-val{
-  font-family:Georgia,"Iowan Old Style",serif;font-size:1.06rem;color:var(--kog-gold-br)}
-.kog-act .kog-note{font-size:11.5px;color:var(--kog-soft);line-height:1.5}
-
-/* sticky mobile bar */
-.kog-bar{
-  position:fixed;left:0;right:0;bottom:0;z-index:60;display:none;
-  grid-template-columns:1fr 1fr;gap:1px;background:var(--kog-line);
-  border-top:1px solid var(--kog-dim);
-  padding-bottom:env(safe-area-inset-bottom,0)}
-.kog-bar a{
-  display:block;text-align:center;padding:15px 10px;text-decoration:none;
-  font-size:12px;letter-spacing:.14em;text-transform:uppercase;font-weight:600}
-.kog-bar .kog-call{background:var(--kog-gold);color:#0a0a0c}
-.kog-bar .kog-text{background:#000;color:var(--kog-gold)}
-.kog-bar a:focus-visible{outline:2px solid var(--kog-gold-br);outline-offset:-3px}
-
-@media(max-width:700px){
-  .kog-bar{display:grid}
-  body{padding-bottom:58px}
-  .kog-act{padding:17px 18px}
-}
-@media(prefers-reduced-motion:reduce){.kog-act{transition:none}}
-</style>
 <link rel="stylesheet" href="./css/site.css">
 <script type="application/ld+json">
 {
@@ -478,6 +421,30 @@
 </div></section>
 
 <!-- ============================ CONTACT ============================ -->
+<section id="contact" class="sec-navy"><div class="wrap">
+  <div class="kicker kicker-line">Talk to me</div>
+  <h2 style="margin-top:22px">Ask me the hard question first.</h2>
+  <p class="lede">The one you think will annoy me. That is usually the one worth
+  answering, and it is the fastest way to find out whether we should work together.</p>
+
+  <div class="cbox">
+    <div>
+      <p class="name script" style="font-size:2rem">Kelli Owens</p>
+      <p>Texas REALTOR® · License #616346</p>
+      <p>Commissioned Remote Online Notary, State of Texas</p>
+      <p><a href="tel:2816507592">281-650-7592</a></p>
+      <p><a href="mailto:kelli.owens@thekorealtygroup.com">kelli.owens@thekorealtygroup.com</a></p>
+    </div>
+    <div>
+      <p class="name">The Sears Group</p>
+      <p>Licensed Texas Real Estate Broker · TREC #9008344</p>
+      <p>Christopher Sears, Designated Broker · TREC #457682</p>
+      <p><a href="tel:7133570068">713-357-0068</a></p>
+      <p><a href="mailto:sell@searsgrp.com">sell@searsgrp.com</a></p>
+    </div>
+  </div>
+</div></section>
+
 <section class="kog-connect" id="connect">
   <div class="wrap">
     <span class="kog-kicker">Connect</span>
@@ -507,32 +474,17 @@
         <span class="kog-note">Name, number, email — one tap</span>
       </a>
     </div>
+
+    <div class="kog-qr">
+      <img src="/img/qr-call-kelli.png" width="104" height="104"
+           alt="QR code that dials 281-650-7592">
+      <div>
+        <b>On a laptop?</b>
+        <span>Point your phone camera at this and it dials me.<br>No app, no typing the number.</span>
+      </div>
+    </div>
   </div>
 </section>
-
-<section id="contact" class="sec-navy"><div class="wrap">
-  <div class="kicker kicker-line">Talk to me</div>
-  <h2 style="margin-top:22px">Ask me the hard question first.</h2>
-  <p class="lede">The one you think will annoy me. That is usually the one worth
-  answering, and it is the fastest way to find out whether we should work together.</p>
-
-  <div class="cbox">
-    <div>
-      <p class="name script" style="font-size:2rem">Kelli Owens</p>
-      <p>Texas REALTOR® · License #616346</p>
-      <p>Commissioned Remote Online Notary, State of Texas</p>
-      <p><a href="tel:2816507592">281-650-7592</a></p>
-      <p><a href="mailto:kelli.owens@thekorealtygroup.com">kelli.owens@thekorealtygroup.com</a></p>
-    </div>
-    <div>
-      <p class="name">The Sears Group</p>
-      <p>Licensed Texas Real Estate Broker · TREC #9008344</p>
-      <p>Christopher Sears, Designated Broker · TREC #457682</p>
-      <p><a href="tel:7133570068">713-357-0068</a></p>
-      <p><a href="mailto:sell@searsgrp.com">sell@searsgrp.com</a></p>
-    </div>
-  </div>
-</div></section>
 
 <footer class="foot"><div class="wrap">
   <div class="foot-nav">
