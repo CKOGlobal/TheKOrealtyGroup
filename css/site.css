@@ -353,3 +353,24 @@ section{padding:96px 0}
 .gcapture .form-status[data-state="err"]{color:#F0A0A0}
 .hp{position:absolute!important;left:-9999px!important;width:1px!important;height:1px!important;
   overflow:hidden!important}
+
+/* ---------- connect block: retune for the light palette ----------
+   The block ships dark-first. These override its own tokens so the
+   cards read correctly on cream, and align it to Cormorant/Inter. */
+.kog-connect,.kog-bar{
+  --kog-card:var(--paper);
+  --kog-ink:var(--navy);
+  --kog-line:var(--line);
+  --kog-soft:var(--ink-soft);
+  --kog-dim:var(--gold-dim);
+}
+.kog-connect{padding:80px 0;background:var(--cream)}
+.kog-connect h2{font-family:var(--serif);color:var(--navy)}
+.kog-connect .kog-act .kog-val{font-family:var(--serif);color:var(--navy)}
+.kog-connect .kog-act .kog-do{color:#8A6A2A}   /* gold is too pale on white */
+.kog-connect .kog-kicker{color:#8A6A2A;border-bottom-color:var(--gold-dim)}
+.kog-connect .kog-act:hover,.kog-connect .kog-act:focus-visible{background:var(--cream-2)}
+.kog-connect .kog-actions{border-top:2px solid var(--gold)}
+.kog-bar .kog-text{background:var(--navy-deep);color:var(--gold-br)}
+.kog-bar .kog-call{color:var(--navy-deep)}
+@media(max-width:760px){.kog-connect{padding:52px 0}}
