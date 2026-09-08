@@ -186,7 +186,7 @@ section{padding:96px 0}
 .sec-navy a{color:var(--gold-br)}
 
 /* ---------- footer ---------- */
-.foot{background:var(--navy-deep);color:rgba(255,255,255,.45);
+.foot{background:var(--navy-deep);color:rgba(255,255,255,.50);
   border-top:1px solid rgba(201,169,97,.18);padding:44px 0 56px;font-size:11.5px;
   line-height:1.85}
 .foot a{color:rgba(201,169,97,.85)}
