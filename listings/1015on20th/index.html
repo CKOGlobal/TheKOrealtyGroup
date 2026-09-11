@@ -10,7 +10,8 @@
 <meta property="og:title" content="1015 20th Street · Galveston, TX">
 <meta property="og:description" content="Three bedrooms, near-equal. Two full baths up, powder down. The island questions, answered before you ask.">
 <meta property="og:url" content="https://1015on20th.com/">
-<!-- TODO(kelli): upload a 1200x630 JPG as img/og-cover.jpg (front elevation, no text overlay). -->
+<!-- Share image: 1200x630 crop of the exterior corner shot. TODO(kelli): replace img/og-cover.jpg
+     if a better front elevation is photographed. -->
 <meta property="og:image" content="https://1015on20th.com/img/og-cover.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
@@ -315,10 +316,10 @@ button.btn-solid:disabled{opacity:.7;cursor:default}
 </head>
 <body>
 
-<!-- TODO(kelli): hero photo. The template CSS points the hero at img/01-front.jpg (an exterior).
-     No exterior photo has been supplied, so the inline style below borrows the living room.
-     When a front elevation exists, upload it as img/01-front.jpg and delete the style attribute. -->
-<header class="hero" style="background-image:url('./img/01-living.jpg')">
+<!-- Hero photo: the template CSS points the hero at img/01-front.jpg. Currently the exterior
+     corner shot from the scan. TODO(kelli): replace with a straight-on front elevation if one
+     is photographed; keep the filename and nothing else changes. -->
+<header class="hero">
   <div class="hero-in"><div class="wrap">
     <!-- TODO(kelli): neighborhood / subdivision name for the eyebrow, if one applies. -->
     <div class="eyebrow">20th Street · Galveston Island, Texas</div>
@@ -431,13 +432,14 @@ button.btn-solid:disabled{opacity:.7;cursor:default}
 
 <section style="padding-top:0"><div class="wrap">
   <div class="kicker">The house</div>
-  <!-- TODO(kelli): the 15 photos below are stills from the 3D scan dated 7/27/2023. No exterior,
-       no third bedroom, no aerial. Confirm they reflect the house as it shows today, and supply an
-       exterior for the hero and the share image. The heading count updates itself from the PHOTOS array. -->
-  <h2><span id="pcount">15</span> photographs from the scan.</h2>
+  <!-- TODO(kelli): the 20 photos below are stills from the 3D scan dated 7/27/2023. One exterior
+       corner shot and the side patio; no straight-on front elevation, no aerial, no street view.
+       Confirm they reflect the house as it shows today. The heading count updates itself from the
+       PHOTOS array. -->
+  <h2><span id="pcount">20</span> photographs from the scan.</h2>
   <div class="grid" id="g"></div>
   <div class="cta-row" style="margin-top:24px">
-    <button class="btn btn-ghost" type="button" id="more">See all 15 photos</button>
+    <button class="btn btn-ghost" type="button" id="more">See all 20 photos</button>
   </div>
 </div></section>
 
@@ -681,23 +683,28 @@ button.btn-solid:disabled{opacity:.7;cursor:default}
 
 <script>
 // [filename in img/, caption, wide?]. Stills from the 3D scan, 7/27/2023.
-// TODO(kelli): add an exterior as the first entry once photographed.
+// TODO(kelli): swap 01-front for a straight-on front elevation if one is photographed.
 const PHOTOS=[
+ ["01-front","Front porch corner, side yard and brick walk",1],
  ["01-living","Living room, looking through to the dining room",1],
- ["02-living-2","Living room, second view, toward the entry hall",0],
  ["03-dining","Dining room, looking into the kitchen",0],
- ["04-dining-2","Dining room, looking back to the living room",0],
- ["05-kitchen","Kitchen: island with seating, gas range, separate pantry",1],
+ ["05-kitchen","Kitchen: island with seating, gas range, separate pantry",0],
  ["06-kitchen-2","Kitchen, second view, island sink and dishwasher",0],
  ["07-kitchen-3","Kitchen, third view, upper cabinets and pendant lights",0],
  ["08-pantry","Pantry door and refrigerator wall",0],
+ ["02-living-2","Living room, second view, toward the entry hall",0],
+ ["04-dining-2","Dining room, looking back to the living room",0],
  ["09-dining-3","Dining room, third view, toward the living room",0],
  ["10-powder-hall","Powder room off the entry hall; front door beyond",1],
  ["11-upstairs-sitting","Upstairs bedroom furnished as a sitting room, opening to an adjoining bedroom",0],
  ["12-upstairs-sitting-2","Upstairs sitting room, second view, two shuttered windows",0],
- ["13-bedroom","Bedroom with brass bed, opening to a bathroom",1],
- ["14-bath-vanity","Bathroom vanity and linen cabinet",0],
- ["15-bath-shower","Bathroom with walk-in shower and patterned tile floor",0]
+ ["13-bedroom","Bedroom with brass bed, opening to a bathroom",0],
+ ["16-bedroom-2","Bedroom with three shuttered windows and louvered closet doors",1],
+ ["17-bath-tub","Bathroom with clawfoot tub and shuttered doors",0],
+ ["18-bath-tub-vanity","Same bathroom, carved wood vanity with stone top",0],
+ ["14-bath-vanity","Second bathroom, vanity and linen cabinet",0],
+ ["15-bath-shower","Second bathroom, walk-in shower and patterned tile floor",0],
+ ["19-patio","Brick side patio and garden along the house",1]
 ];
 const g=document.getElementById('g');
 PHOTOS.forEach((p,i)=>{
