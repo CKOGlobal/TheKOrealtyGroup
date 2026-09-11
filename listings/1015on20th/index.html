@@ -1,0 +1,752 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>1015 20th Street · Galveston, TX 77550</title>
+<meta name="description" content="Three near-equal bedrooms and two full baths upstairs, a powder room down, on 20th Street in Galveston. Windstorm, flood zone, short-term rental rules, historic review, taxes and parking, addressed on the page before you ask.">
+<link rel="canonical" href="https://1015on20th.com/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="1015 20th Street · Galveston, TX">
+<meta property="og:description" content="Three bedrooms, near-equal. Two full baths up, powder down. The island questions, answered before you ask.">
+<meta property="og:url" content="https://1015on20th.com/">
+<!-- TODO(kelli): upload a 1200x630 JPG as img/og-cover.jpg (front elevation, no text overlay). -->
+<meta property="og:image" content="https://1015on20th.com/img/og-cover.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="1015 20th Street · Galveston, TX">
+<meta name="twitter:description" content="Three bedrooms, near-equal. Two full baths up, powder down. The island questions, answered before you ask.">
+<meta name="twitter:image" content="https://1015on20th.com/img/og-cover.jpg">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "SingleFamilyResidence",
+      "@id": "https://1015on20th.com/#residence",
+      "name": "1015 20th Street",
+      "url": "https://1015on20th.com/",
+      "image": "https://1015on20th.com/img/og-cover.jpg",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "1015 20th St",
+        "addressLocality": "Galveston",
+        "addressRegion": "TX",
+        "postalCode": "77550",
+        "addressCountry": "US"
+      },
+      "numberOfBedrooms": 3,
+      "numberOfFullBathrooms": 2,
+      "numberOfPartialBathrooms": 1,
+      "numberOfBathroomsTotal": 2.5
+    },
+    {
+      "@type": "RealEstateAgent",
+      "@id": "https://thekorealtygroup.com/#agent",
+      "name": "Kelli Owens",
+      "url": "https://thekorealtygroup.com",
+      "telephone": "+1-281-650-7592",
+      "email": "kelli.owens@thekorealtygroup.com",
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "TREC License",
+        "value": "616346"
+      },
+      "memberOf": {
+        "@type": "Organization",
+        "name": "The Sears Group",
+        "identifier": {
+          "@type": "PropertyValue",
+          "propertyID": "TREC License",
+          "value": "9008344"
+        }
+      },
+      "areaServed": "Galveston, TX"
+    }
+  ]
+}
+</script>
+<!--
+  TODO(kelli): once the price is supplied, add to the SingleFamilyResidence node:
+    "offers": { "@type": "Offer", "price": "000000", "priceCurrency": "USD",
+                "availability": "https://schema.org/InStock",
+                "offeredBy": { "@id": "https://thekorealtygroup.com/#agent" } }
+  Do not add floorSize until the recorded square footage is supplied.
+-->
+<style>
+:root{
+  --bg:#0a0a0c; --card:#131316; --card-2:#0f0f12;
+  --ink:#f3efe6; --ink-soft:#9b9384; --line:#26231d;
+  --gold:#c9a961; --gold-br:#e3c684; --gold-dim:rgba(201,169,97,.28);
+  --accent:#c9a961; --accent-soft:#0f0f12;
+  --max:1120px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);
+  font:16px/1.68 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  -webkit-font-smoothing:antialiased}
+h1,h2,h3{font-family:Georgia,"Iowan Old Style","Times New Roman",serif;font-weight:400;line-height:1.14;margin:0;letter-spacing:-.005em}
+img{max-width:100%;display:block}
+a{color:var(--gold)}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 24px}
+
+.hero{position:relative;min-height:82vh;display:flex;align-items:flex-end;
+  background:#000 url('./img/01-front.jpg') center/cover no-repeat}
+.hero::after{content:"";position:absolute;inset:0;
+  background:linear-gradient(180deg,rgba(6,6,8,.58) 0%,rgba(6,6,8,.42) 38%,rgba(6,6,8,.96) 100%)}
+.hero-in{position:relative;z-index:1;width:100%;padding:70px 0 56px;color:#fff}
+.eyebrow{text-transform:uppercase;letter-spacing:.26em;font-size:11px;
+  color:var(--gold);margin-bottom:20px;font-weight:600}
+.hero h1{font-size:clamp(2.2rem,5.6vw,4rem);color:#fff}
+.price{font-size:clamp(1.05rem,2.2vw,1.32rem);margin-top:16px;color:#ded7c8;letter-spacing:.02em}
+.promise{font-family:Georgia,serif;font-size:clamp(1.18rem,2.7vw,1.75rem);
+  margin-top:30px;max-width:22ch;line-height:1.4;color:var(--gold-br);font-style:italic}
+.cta-row{display:flex;flex-wrap:wrap;gap:12px;margin-top:34px}
+.btn{display:inline-block;padding:14px 26px;border-radius:1px;text-decoration:none;
+  font-size:12.5px;letter-spacing:.14em;text-transform:uppercase;font-weight:600;transition:.18s}
+.btn-solid{background:var(--gold);color:#0a0a0c}
+.btn-solid:hover{background:var(--gold-br)}
+.btn-ghost{border:1px solid var(--gold-dim);color:var(--gold)}
+.btn-ghost:hover{border-color:var(--gold);background:rgba(201,169,97,.09)}
+button.btn{background:none;font-family:inherit;cursor:pointer}
+
+.proof{background:#000;color:var(--ink);
+  border-top:1px solid var(--gold-dim);border-bottom:1px solid var(--gold-dim)}
+.proof-in{display:grid;grid-template-columns:repeat(auto-fit,minmax(196px,1fr));
+  gap:1px;background:var(--line);text-align:center}
+.proof-in div{padding:32px 16px;background:#000}
+.proof b{display:block;font-family:Georgia,serif;font-size:1.4rem;font-weight:400;
+  color:var(--gold);margin-bottom:8px}
+.proof span{font-size:10.5px;color:var(--ink-soft);letter-spacing:.1em;text-transform:uppercase;
+  display:block;max-width:24ch;margin:0 auto;line-height:1.5}
+
+section{padding:88px 0}
+.lede{font-size:1.2rem;color:var(--ink-soft);max-width:60ch;margin-top:20px}
+h2{font-size:clamp(1.7rem,3.5vw,2.5rem)}
+.kicker{text-transform:uppercase;letter-spacing:.26em;font-size:11px;
+  color:var(--gold);font-weight:600;margin-bottom:18px;
+  padding-bottom:14px;border-bottom:1px solid var(--gold-dim);display:inline-block}
+
+.pp{display:grid;gap:1px;margin-top:44px;background:var(--line);border:1px solid var(--line)}
+.pp-row{display:grid;grid-template-columns:1fr 1.15fr;gap:1px}
+.pp-row>div{background:var(--card);padding:30px 32px}
+.pp-q{color:var(--ink-soft);font-style:italic;font-family:Georgia,serif;font-size:1.08rem}
+.pp-a{color:#ddd6c8}
+.pp-a strong{color:var(--gold-br);font-weight:600}
+@media(max-width:720px){.pp-row{grid-template-columns:1fr}}
+
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:12px;margin-top:42px}
+.grid figure{margin:0;cursor:zoom-in;background:#000;overflow:hidden;border:1px solid var(--line)}
+.grid img{width:100%;height:230px;object-fit:cover;transition:transform .5s,opacity .3s;opacity:.92}
+.grid figure:hover img{transform:scale(1.04);opacity:1}
+.grid figcaption{font-size:11.5px;color:var(--ink-soft);padding:11px 12px 13px;
+  letter-spacing:.05em;background:var(--card-2)}
+.grid figure.wide{grid-column:span 2}
+.grid figure.hid{display:none}
+@media(max-width:720px){.grid figure.wide{grid-column:span 1}}
+
+.tour{position:relative;padding-bottom:56.25%;height:0;margin-top:38px;
+  background:#000;border:1px solid var(--line)}
+.tour iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+
+.facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:1px;
+  background:var(--line);border:1px solid var(--line);margin-top:42px}
+.facts div{background:var(--card);padding:22px 24px}
+.facts dt{font-size:10.5px;text-transform:uppercase;letter-spacing:.17em;color:var(--ink-soft)}
+.facts dd{margin:8px 0 0;font-family:Georgia,serif;font-size:1.2rem;color:var(--gold-br)}
+
+.disc{background:#000;border-top:1px solid var(--gold-dim);border-bottom:1px solid var(--gold-dim)}
+.disc ul{margin:30px 0 0;padding:0;list-style:none;max-width:62ch}
+.disc li{padding:14px 0 14px 32px;border-bottom:1px solid var(--line);position:relative;color:#ddd6c8}
+.disc li::before{content:"";position:absolute;left:0;top:23px;width:16px;height:1px;background:var(--gold)}
+.disc li:last-child{border-bottom:0}
+
+.contact{background:var(--card-2);border-top:1px solid var(--gold-dim)}
+.contact h2{color:#fff}
+.contact a{color:var(--gold-br);text-decoration:none;border-bottom:1px solid var(--gold-dim)}
+.contact a:hover{border-color:var(--gold)}
+.cbox{display:grid;grid-template-columns:1fr 1fr;gap:48px;margin-top:38px}
+@media(max-width:720px){.cbox{grid-template-columns:1fr}}
+.cbox p{margin:.4em 0;color:var(--ink-soft)}
+.legal{font-size:11.5px;line-height:1.8;color:#8a8377;margin:0;padding:0}
+.site-legal{background:var(--card-2);border-top:1px solid var(--line);
+  padding:34px 0 44px}
+.site-legal a{color:var(--gold-br);text-decoration:none;
+  border-bottom:1px solid var(--gold-dim)}
+.site-legal a:hover{border-color:var(--gold)}
+
+
+.fp{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:26px}
+@media(max-width:760px){.fp{grid-template-columns:1fr}}
+.fp figure{margin:0;background:#fff;border:1px solid var(--line);cursor:zoom-in;overflow:hidden}
+.fp img{width:100%;height:auto;display:block}
+.fp figcaption{font-size:11px;letter-spacing:.16em;text-transform:uppercase;
+  color:var(--ink-soft);background:var(--card-2);padding:11px 12px 12px;text-align:center}
+
+#lb{position:fixed;inset:0;background:rgba(4,4,6,.97);display:none;
+  align-items:center;justify-content:center;z-index:99;padding:28px}
+#lb.on{display:flex}
+#lb img{max-width:94vw;max-height:88vh;object-fit:contain}
+#lb button{position:absolute;background:none;border:0;color:var(--gold);font-size:34px;
+  cursor:pointer;padding:14px;line-height:1;opacity:.85}
+#lb button:hover{opacity:1}
+#lbx{top:8px;right:12px}
+#lbp{left:6px;top:50%;transform:translateY(-50%)}
+#lbn{right:6px;top:50%;transform:translateY(-50%)}
+#lbc{position:absolute;bottom:16px;left:0;right:0;text-align:center;color:var(--ink-soft);
+  font-size:11.5px;letter-spacing:.1em;text-transform:uppercase}
+
+@media(max-width:640px){
+  .proof-in{grid-template-columns:repeat(2,1fr)}
+  .proof-in div:last-child{grid-column:1/-1}
+  .facts{grid-template-columns:repeat(2,1fr)}
+  section{padding:56px 0}
+  .wrap{padding:0 18px}
+  .hero{min-height:72vh}
+  .proof-in div{padding:24px 12px}
+  .proof b{font-size:1.2rem}
+  .proof span{font-size:9.5px;letter-spacing:.07em}
+  .btn{padding:11px 15px;font-size:10.5px;letter-spacing:.1em}
+  .cta-row{gap:8px}
+}
+
+/* ---------- connect block + sticky mobile bar ---------- */
+.kog-connect,.kog-bar{
+  /* Tokens must be declared on BOTH — .kog-bar is not a descendant of
+     .kog-connect, so it cannot inherit them. */
+  --kog-gold: var(--gold, #c9a961);
+  --kog-gold-br: var(--gold-br, #e3c684);
+  --kog-line: var(--line, #26231d);
+  --kog-card: var(--card, #131316);
+  --kog-ink: var(--ink, #f3efe6);
+  --kog-soft: var(--ink-soft, #9b9384);
+  --kog-dim: rgba(201,169,97,.28);
+}
+.kog-connect{padding:44px 0}
+.kog-connect .kog-kicker{
+  font-size:11px;letter-spacing:.26em;text-transform:uppercase;color:var(--kog-gold);
+  font-weight:700;display:inline-block;padding-bottom:13px;border-bottom:1px solid var(--kog-dim);
+  margin-bottom:18px}
+.kog-connect h2{
+  font-family:Georgia,"Iowan Old Style","Times New Roman",serif;font-weight:400;
+  font-size:clamp(1.5rem,3vw,2.1rem);margin:0;line-height:1.15;color:var(--kog-ink)}
+.kog-connect .kog-lede{
+  color:var(--kog-soft);max-width:56ch;margin:14px 0 0;line-height:1.65}
+
+.kog-actions{
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));
+  gap:1px;background:var(--kog-line);border:1px solid var(--kog-line);margin-top:28px}
+.kog-act{
+  display:flex;flex-direction:column;gap:5px;background:var(--kog-card);
+  padding:20px 22px;text-decoration:none;color:var(--kog-ink);transition:background .16s}
+.kog-act:hover,.kog-act:focus-visible{background:#1a1a1e}
+.kog-act:focus-visible{outline:2px solid var(--kog-gold-br);outline-offset:-2px}
+.kog-act .kog-do{
+  font-size:10.5px;letter-spacing:.17em;text-transform:uppercase;color:var(--kog-gold)}
+.kog-act .kog-val{
+  font-family:Georgia,"Iowan Old Style",serif;font-size:1.06rem;color:var(--kog-gold-br)}
+.kog-act .kog-note{font-size:11.5px;color:var(--kog-soft);line-height:1.5}
+
+/* sticky mobile bar */
+.kog-bar{
+  position:fixed;left:0;right:0;bottom:0;z-index:60;display:none;
+  grid-template-columns:1fr 1fr;gap:1px;background:var(--kog-line);
+  border-top:1px solid var(--kog-dim);
+  padding-bottom:env(safe-area-inset-bottom,0)}
+.kog-bar a{
+  display:block;text-align:center;padding:15px 10px;text-decoration:none;
+  font-size:12px;letter-spacing:.14em;text-transform:uppercase;font-weight:600}
+.kog-bar .kog-call{background:var(--kog-gold);color:#0a0a0c}
+.kog-bar .kog-text{background:#000;color:var(--kog-gold)}
+.kog-bar a:focus-visible{outline:2px solid var(--kog-gold-br);outline-offset:-3px}
+
+@media(max-width:700px){
+  .kog-bar{display:grid}
+  body{padding-bottom:58px}
+  .kog-act{padding:17px 18px}
+}
+@media(prefers-reduced-motion:reduce){.kog-act{transition:none}}
+
+/* QR is desktop-only: phone visitors already have the sticky call bar,
+   and a tel: code is pointless on the device that would dial it. */
+.kog-qr{display:flex;align-items:center;gap:18px;margin-top:22px;
+  padding:16px 20px;border:1px solid var(--kog-line);background:var(--kog-card)}
+.kog-qr img{width:104px;height:104px;display:block;background:#fff;padding:7px;
+  border-radius:2px}
+.kog-qr b{display:block;font-size:10.5px;letter-spacing:.17em;text-transform:uppercase;
+  color:var(--kog-gold);font-weight:600;margin-bottom:5px}
+.kog-qr span{font-size:12.5px;color:var(--kog-soft);line-height:1.55}
+@media(max-width:700px){.kog-qr{display:none}}
+
+/* ---------- 1015on20th additions ----------
+   Everything above this line is the shared listing-site template from
+   110cloudbridge, unchanged. Only add below; never edit above. */
+.todo{color:var(--ink-soft);font-style:italic}
+.ph{display:flex;align-items:center;justify-content:center;text-align:center;
+  color:var(--ink-soft);font-size:12.5px;letter-spacing:.14em;text-transform:uppercase;
+  line-height:1.6;padding:20px}
+.tour .ph{position:absolute;inset:0}
+.ph-box{margin-top:42px;border:1px dashed var(--line);background:var(--card-2);min-height:180px}
+.form{display:grid;gap:16px;margin-top:38px;max-width:560px}
+.form label{display:block;font-size:10.5px;letter-spacing:.17em;text-transform:uppercase;
+  color:var(--ink-soft);margin-bottom:6px}
+.form input,.form textarea{width:100%;background:var(--card);border:1px solid var(--line);
+  color:var(--ink);padding:13px 14px;font:inherit;border-radius:1px}
+.form input:focus,.form textarea:focus{outline:2px solid var(--gold-br);outline-offset:-2px;border-color:var(--gold)}
+.form textarea{min-height:120px;resize:vertical}
+.form ::placeholder{color:#8f877a;opacity:1}
+.hp{position:absolute;left:-10000px;top:auto;width:1px;height:1px;overflow:hidden}
+.form-status{font-size:14px;color:var(--gold-br);min-height:1.5em;margin:0}
+/* The template's button.btn{background:none} out-specifies .btn-solid; restore the gold fill
+   for the one solid <button> on this page (the form submit). */
+button.btn-solid{background:var(--gold);color:#0a0a0c}
+button.btn-solid:hover{background:var(--gold-br)}
+button.btn-solid:disabled{opacity:.7;cursor:default}
+.fn{font-size:12.5px;color:var(--ink-soft);margin-top:18px;max-width:70ch}
+/* The hero photo is whatever gets uploaded; the text block carries its own backdrop so the
+   eyebrow, price and buttons meet 4.5:1 regardless of how bright the photo is behind them. */
+.hero-in{background:linear-gradient(180deg,rgba(6,6,8,0) 0,rgba(6,6,8,.9) 70px,rgba(6,6,8,.9) 100%)}
+/* The sticky bar grows by the iOS home-indicator inset; the body must grow
+   with it or the last lines of the footer sit under the bar. */
+@media(max-width:700px){body{padding-bottom:calc(58px + env(safe-area-inset-bottom,0px))}}
+</style>
+</head>
+<body>
+
+<!-- TODO(kelli): hero photo. The template CSS points the hero at img/01-front.jpg (an exterior).
+     No exterior photo has been supplied, so the inline style below borrows the living room.
+     When a front elevation exists, upload it as img/01-front.jpg and delete the style attribute. -->
+<header class="hero" style="background-image:url('./img/01-living.jpg')">
+  <div class="hero-in"><div class="wrap">
+    <!-- TODO(kelli): neighborhood / subdivision name for the eyebrow, if one applies. -->
+    <div class="eyebrow">20th Street · Galveston Island, Texas</div>
+    <h1>1015 20th Street</h1>
+    <!-- TODO(kelli): price, then recorded square footage, then school district. Do not add
+         square footage from the floor plan; the rooms sum to roughly 1,700 and that is not the
+         recorded figure. -->
+    <div class="price">3 bed · 2 full + powder · Two stories · Galveston, TX 77550</div>
+    <p class="promise">Three bedrooms, near-equal. Two full baths up, powder down. The island questions, answered before you ask.</p>
+    <div class="cta-row">
+      <a class="btn btn-solid" href="#island">The island questions</a>
+      <a class="btn btn-ghost" href="#tour">Walk through in 3D</a>
+      <a class="btn btn-ghost" href="#contact">Schedule a showing</a>
+    </div>
+  </div></div>
+</header>
+
+<div class="proof"><div class="wrap"><div class="proof-in">
+  <div><b>3 up</b><span>All three bedrooms on the second floor</span></div>
+  <div><b>167 · 212 · 214</b><span>Bedroom sizes in sq ft &mdash; near-equal</span></div>
+  <div><b>2 full + &frac12;</b><span>Two full baths up, powder down</span></div>
+  <div><b>23'4"</b><span>Kitchen length</span></div>
+  <div><b>Two stories</b><span>Living, dining, kitchen down</span></div>
+</div></div></div>
+
+<section><div class="wrap">
+  <div class="kicker">If you've been looking on the island</div>
+  <h2>You already know the questions.</h2>
+  <p class="lede">Windstorm, flood, rental rules, historic review, parking. Every house on Galveston Island comes with the
+  same list, and most listings make you ask. Here it is up front &mdash; the house first, the island below.</p>
+
+  <div class="pp">
+    <div class="pp-row">
+      <div class="pp-q">"Which bedroom is the primary?"</div>
+      <div class="pp-a"><strong>The smallest one, and it is upstairs.</strong> The primary measures 16'1" &times; 10'5",
+      about 167 sq ft. The other two are 15'10" &times; 13'5" and 15'10" &times; 13'6", about 212 and 214.
+      All three are on the second floor, along with both full baths. If you need a large first-floor suite, this is
+      not that house. If you need three rooms nobody has to fight over &mdash; parents and adult kids, two couples
+      splitting a beach house, roommates, or a rental where every bedroom books at the same rate &mdash; it is.</div>
+    </div>
+    <div class="pp-row">
+      <div class="pp-q">"Where are the bathrooms?"</div>
+      <div class="pp-a"><strong>Two full baths upstairs, a powder room down.</strong> The full baths measure
+      6'9" &times; 10'5" and 6'11" &times; 9'2". The powder room (2'8" &times; 5'2") sits off the entry hall, so
+      guests never climb the stairs.</div>
+    </div>
+    <div class="pp-row">
+      <div class="pp-q">"What's on the first floor?"</div>
+      <div class="pp-a"><strong>An entry hall, living room, dining room, kitchen and powder room.</strong>
+      The entry hall is 24'9" long. The living room (15'9" &times; 13'4") and dining room (15'9" &times; 13'3")
+      share the same width and open to each other through a cased opening. The kitchen is 23'4" long and
+      10'5" wide, with an island, a gas range and a separate pantry.</div>
+    </div>
+    <div class="pp-row">
+      <div class="pp-q">"Does it work as a rental?"</div>
+      <div class="pp-a"><strong>Whether it may be rented short-term is a city question; see below.</strong>
+      Whether the floor plan works as one is answered above: three bedrooms of near-equal size, two full baths
+      on the same floor as the bedrooms, and a kitchen that seats people at the island.</div>
+    </div>
+    <div class="pp-row">
+      <div class="pp-q">"How big is it?"</div>
+      <div class="pp-a"><!-- TODO(kelli): recorded (appraisal district or MLS) square footage and its source. -->
+      <strong>The recorded square footage is being confirmed</strong> <span class="todo">(pending)</span>.
+      The eleven labeled rooms on the floor plan add up to one number; the appraisal district reports another;
+      the MLS may show a third. None of them is wrong, and none of them is quoted here until the recorded figure
+      is in hand. <a href="https://thekorealtygroup.com/guides/why-square-footage-doesnt-match.html">Why the numbers never match</a>.</div>
+    </div>
+  </div>
+</div></section>
+
+<section id="tour" style="padding-top:0"><div class="wrap">
+  <div class="kicker">3D tour</div>
+  <h2>Walk it yourself, right now.</h2>
+  <p class="lede">Every room, at your own pace. No appointment, no agent standing behind you.</p>
+  <div class="tour">
+    <!-- TODO(kelli): Matterport (or equivalent) tour URL. Replace the placeholder with:
+         <iframe src="https://my.matterport.com/show/?m=MODEL_ID" allowfullscreen allow="xr-spatial-tracking" title="3D tour of 1015 20th Street"></iframe> -->
+    <div class="ph">3D tour link pending</div>
+  </div>
+
+  <h3 style="margin-top:56px;font-size:1.2rem">Floor plan</h3>
+  <p style="color:var(--ink-soft);margin-top:12px;max-width:60ch">Room dimensions from the listing floor plan, as drawn.</p>
+  <!-- TODO(kelli): floor plan images. Upload img/fp-1.jpg (first floor) and img/fp-2.jpg (second floor)
+       and the PDF as floor-plan.pdf, then replace the placeholder with:
+  <div class="fp">
+    <figure><img loading="lazy" src="./img/fp-1.jpg" alt="First floor plan with room dimensions"><figcaption>First floor</figcaption></figure>
+    <figure><img loading="lazy" src="./img/fp-2.jpg" alt="Second floor plan with room dimensions"><figcaption>Second floor</figcaption></figure>
+  </div>
+  <div class="cta-row" style="margin-top:22px">
+    <a class="btn btn-ghost" href="./floor-plan.pdf" target="_blank" rel="noopener">Open the floor plan (PDF)</a>
+  </div>
+  -->
+  <div class="ph ph-box" style="margin-top:18px;min-height:120px">Floor plan images pending</div>
+
+  <div class="facts" style="margin-top:26px">
+    <div><dt>Entry</dt><dd>7'2" &times; 24'9" &middot; 1st</dd></div>
+    <div><dt>Living room</dt><dd>15'9" &times; 13'4" &middot; 1st</dd></div>
+    <div><dt>Dining area</dt><dd>15'9" &times; 13'3" &middot; 1st</dd></div>
+    <div><dt>Kitchen</dt><dd>23'4" &times; 10'5" &middot; 1st</dd></div>
+    <div><dt>Powder</dt><dd>2'8" &times; 5'2" &middot; 1st</dd></div>
+    <div><dt>Hall</dt><dd>6'11" &times; 17'9" &middot; 2nd</dd></div>
+    <div><dt>Primary bedroom</dt><dd>16'1" &times; 10'5" &middot; 2nd</dd></div>
+    <div><dt>Bedroom</dt><dd>15'10" &times; 13'5" &middot; 2nd</dd></div>
+    <div><dt>Bedroom</dt><dd>15'10" &times; 13'6" &middot; 2nd</dd></div>
+    <div><dt>Bathroom</dt><dd>6'9" &times; 10'5" &middot; 2nd</dd></div>
+    <div><dt>Bathroom</dt><dd>6'11" &times; 9'2" &middot; 2nd</dd></div>
+  </div>
+  <p class="fn">Room dimensions are from the listing floor plan and are approximate. Buyer should independently verify all measurements.</p>
+</div></section>
+
+<section style="padding-top:0"><div class="wrap">
+  <div class="kicker">The house</div>
+  <!-- TODO(kelli): the 15 photos below are stills from the 3D scan dated 7/27/2023. No exterior,
+       no third bedroom, no aerial. Confirm they reflect the house as it shows today, and supply an
+       exterior for the hero and the share image. The heading count updates itself from the PHOTOS array. -->
+  <h2><span id="pcount">15</span> photographs from the scan.</h2>
+  <div class="grid" id="g"></div>
+  <div class="cta-row" style="margin-top:24px">
+    <button class="btn btn-ghost" type="button" id="more">See all 15 photos</button>
+  </div>
+</div></section>
+
+<section style="padding-top:0"><div class="wrap">
+  <div class="kicker">The particulars</div>
+  <h2>The numbers, plainly.</h2>
+  <div class="facts">
+    <!-- TODO(kelli): price -->
+    <div><dt>Price</dt><dd class="todo">Pending</dd></div>
+    <div><dt>Bedrooms</dt><dd>3, all upstairs</dd></div>
+    <div><dt>Baths</dt><dd>2 full up, 1 half down</dd></div>
+    <!-- TODO(kelli): recorded living area + source (GCAD or MLS) -->
+    <div><dt>Living area</dt><dd class="todo">Pending<sup>*</sup></dd></div>
+    <!-- TODO(kelli): lot size + source -->
+    <div><dt>Lot</dt><dd class="todo">Pending<sup>*</sup></dd></div>
+    <!-- TODO(kelli): year built + source -->
+    <div><dt>Year built</dt><dd class="todo">Pending<sup>*</sup></dd></div>
+    <div><dt>Stories</dt><dd>2 &mdash; bedrooms up</dd></div>
+    <!-- TODO(kelli): actual parking arrangement (no garage on the floor plan) -->
+    <div><dt>Garage / parking</dt><dd class="todo">No garage on plan &middot; parking pending</dd></div>
+    <!-- TODO(kelli): heating / cooling. The scan stills show wall-mounted mini-split units in the living
+         room, dining room and kitchen; confirm the system before stating it. -->
+    <div><dt>Heating / cooling</dt><dd class="todo">Pending</dd></div>
+    <!-- TODO(kelli): roof material and age -->
+    <div><dt>Roof</dt><dd class="todo">Pending</dd></div>
+    <!-- TODO(kelli): foundation type -->
+    <div><dt>Foundation</dt><dd class="todo">Pending</dd></div>
+    <!-- TODO(kelli): water / sewer provider -->
+    <div><dt>Water / sewer</dt><dd class="todo">Pending</dd></div>
+    <!-- TODO(kelli): subdivision / legal description -->
+    <div><dt>Subdivision</dt><dd class="todo">Pending</dd></div>
+    <!-- TODO(kelli): school district -->
+    <div><dt>School district</dt><dd class="todo">Pending</dd></div>
+    <!-- TODO(kelli): total tax rate and year -->
+    <div><dt>Total tax rate</dt><dd class="todo">Pending</dd></div>
+    <!-- TODO(kelli): MUD / PID / LID — "None" only once confirmed -->
+    <div><dt>MUD / PID / LID</dt><dd class="todo">Pending</dd></div>
+    <!-- TODO(kelli): HOA — amount and what it covers, or "None". If one applies, add:
+         <a href="https://thekorealtygroup.com/guides/hoa-dues-what-they-actually-cover.html">what to read in the resale certificate</a> -->
+    <div><dt>HOA</dt><dd class="todo">Pending</dd></div>
+    <!-- TODO(kelli): MLS number -->
+    <div><dt>MLS #</dt><dd class="todo">Pending</dd></div>
+  </div>
+  <p class="fn">
+    <sup>*</sup> Square footage, lot size and year built will be stated from the Galveston Central Appraisal District
+    or the MLS, with the source named, once confirmed. Room dimensions are from the listing floor plan and are approximate.
+    Buyer should independently verify all measurements. <a href="https://thekorealtygroup.com/guides/why-square-footage-doesnt-match.html">Why the appraisal district and the floor plan disagree</a>.</p>
+</div></section>
+
+<section class="disc" id="island"><div class="wrap">
+  <div class="kicker">Galveston Island</div>
+  <h2>The island questions, answered.</h2>
+  <p class="lede">This is not a suburban house and you are not a commuter. Whether you are buying a second home,
+  a rental, or a place to live year-round, these six items decide whether the deal closes. They are answered here
+  in the order they kill contracts.</p>
+
+  <div class="pp" style="margin-top:38px">
+    <div class="pp-row">
+      <div class="pp-q">1. "What about windstorm insurance?"</div>
+      <div class="pp-a"><strong>On Galveston Island, windstorm is a separate policy from flood,</strong> usually
+      written through the Texas Windstorm Insurance Association (TWIA), and a missing windstorm certificate is the
+      most common reason an island contract falls apart.
+      <!-- TODO(kelli): does the property hold a current WPI-8 Certificate of Compliance? State yes/no, the date,
+           and what it covers (roof, openings, whole structure). Never quote a premium. -->
+      Whether this house holds a current WPI-8 Certificate of Compliance: <span class="todo">being confirmed</span>.
+      No premium is quoted here; get your own quote from your own agent before you write an offer.</div>
+    </div>
+    <div class="pp-row">
+      <div class="pp-q">2. "What flood zone is it in?"</div>
+      <div class="pp-a"><strong>A flood zone is a parcel-level fact, not a city-wide one.</strong> Nothing here is
+      assumed from the neighborhood.
+      <!-- TODO(kelli): FEMA zone, map panel number, panel effective date, and whether an elevation certificate
+           exists (and its date). Pull from the FEMA Flood Map Service Center for this exact parcel. -->
+      FEMA zone for this parcel: <span class="todo">pending</span>. Map panel and effective date:
+      <span class="todo">pending</span>. Elevation certificate on file: <span class="todo">pending</span>.
+      <a href="https://thekorealtygroup.com/guides/flood-zone-x-x500-ae-galveston-county.html">What Zone X, X500 and AE actually mean in Galveston County</a>.</div>
+    </div>
+    <div class="pp-row">
+      <div class="pp-q">3. "Can I rent it short-term?"</div>
+      <div class="pp-a"><strong>The City of Galveston has required short-term rentals to register since 2015 (Ordinance 15-012), and collects hotel occupancy tax on them.</strong>
+      <!-- TODO(kelli): verify with the City of Galveston whether STR is permitted at this address (zoning, any
+           historic-district or HOA restriction) and list what registration requires (registration, hotel
+           occupancy tax, occupancy limits, parking). Do not assert until the city confirms. -->
+      Whether it is permitted at this address, and exactly what registration requires for this parcel, is being
+      confirmed with the city directly rather than assumed: <span class="todo">pending</span>.</div>
+    </div>
+    <div class="pp-row">
+      <div class="pp-q">4. "Is it in a historic district?"</div>
+      <div class="pp-a"><strong>20th Street near Broadway sits close to the boundaries of the East End and Lost Bayou
+      historic districts,</strong> where any change to the exterior goes before the city's Landmark Commission.
+      <!-- TODO(kelli): verify this parcel against the City of Galveston's official historic district map
+           (GIS viewer at gis.galvestontx.gov, Historic Districts layer) or the Planning Division, and state the
+           district name (or "none") only from that source. The city site could not be reached from the build
+           environment, so nothing is asserted here. -->
+      Whether this parcel falls inside a district, and which one, is being verified against the City of Galveston's
+      official district map: <span class="todo">pending</span>. If it does, exterior work needs Landmark Commission approval; interiors are not reviewed.</div>
+    </div>
+    <div class="pp-row">
+      <div class="pp-q">5. "What are the taxes?"</div>
+      <div class="pp-a"><!-- TODO(kelli): total tax rate with year, the taxing units, and whether any MUD, PID or LID applies. -->
+      <strong>Total tax rate:</strong> <span class="todo">pending</span>. <strong>MUD, PID or LID:</strong>
+      <span class="todo">pending</span>. <a href="https://thekorealtygroup.com/guides/mud-pid-lid-texas-what-they-cost.html">What a MUD, PID or LID actually costs you</a>.</div>
+    </div>
+    <div class="pp-row">
+      <div class="pp-q">6. "Where do I park?"</div>
+      <div class="pp-a"><strong>There is no garage on the floor plan.</strong>
+      <!-- TODO(kelli): the actual arrangement — driveway, alley access, carport, on-street only, permit rules. -->
+      The actual parking arrangement: <span class="todo">pending</span>.</div>
+    </div>
+  </div>
+</div></section>
+
+<section class="disc" id="disclosure" style="border-top:0"><div class="wrap">
+  <div class="kicker">Seller's disclosure</div>
+  <h2>Read it before you visit, not after.</h2>
+  <p class="lede">The complete seller's disclosure will be posted here, every page, exactly as the owners filled it out.</p>
+  <!-- TODO(kelli): upload sellers-disclosure.pdf to the repo root, then replace the placeholder with:
+  <div class="cta-row" style="margin-top:26px">
+    <a class="btn" style="background:var(--gold);color:#0a0a0c" href="./sellers-disclosure.pdf" target="_blank" rel="noopener">Open the seller&#39;s disclosure (PDF)</a>
+  </div>
+  -->
+  <div class="ph ph-box" style="margin-top:26px;min-height:100px;max-width:62ch">Seller's disclosure PDF pending</div>
+</div></section>
+
+<section class="contact" id="contact"><div class="wrap">
+  <div class="kicker">Come see it</div>
+  <h2>Bring your agent, or come by yourself.</h2>
+  <div class="cbox">
+    <div>
+      <p style="font-family:Georgia,serif;font-size:1.3rem;color:#fff">Kelli Owens</p>
+      <p>Texas REALTOR® · The KO Realty Group</p>
+      <p>TREC License #616346</p>
+      <p><a href="tel:2816507592">281-650-7592</a></p>
+      <p><a href="mailto:kelli.owens@thekorealtygroup.com">kelli.owens@thekorealtygroup.com</a></p>
+    </div>
+    <div>
+      <p style="font-family:Georgia,serif;font-size:1.3rem;color:#fff">The Sears Group</p>
+      <p>Licensed Texas Real Estate Broker · TREC License #9008344</p>
+      <p>Christopher Sears, Designated Broker · TREC License #457682</p>
+      <p><a href="tel:7133570068">713-357-0068</a></p>
+      <p><a href="mailto:sell@searsgrp.com">sell@searsgrp.com</a></p>
+    </div>
+  </div>
+
+  <form class="form" id="f" action="/api/contact" method="post" novalidate>
+    <div>
+      <label for="f-name">Name</label>
+      <input id="f-name" name="name" type="text" autocomplete="name" required>
+    </div>
+    <div>
+      <label for="f-contact">Email or phone</label>
+      <input id="f-contact" name="contact" type="text" autocomplete="email" inputmode="email" required>
+    </div>
+    <div>
+      <label for="f-msg">When would you like to see it?</label>
+      <textarea id="f-msg" name="message" placeholder="Days, times, and whether you're bringing an agent."></textarea>
+    </div>
+    <!-- Honeypot: humans never see this field; bots fill it and the API quietly drops the submission. -->
+    <div class="hp" aria-hidden="true">
+      <label for="f-website">Website</label>
+      <input id="f-website" name="website" type="text" tabindex="-1" autocomplete="off">
+    </div>
+    <input type="hidden" name="source" value="1015on20th">
+    <input type="hidden" name="address" value="1015 20th St, Galveston, TX 77550">
+    <div class="cta-row" style="margin-top:4px">
+      <button class="btn btn-solid" type="submit" id="f-btn">Request a showing</button>
+    </div>
+    <p class="form-status" id="f-status" role="status" aria-live="polite"></p>
+  </form>
+</div></section>
+
+<section class="kog-connect" id="connect">
+  <div class="wrap">
+    <span class="kog-kicker">Connect</span>
+    <h2>Reach me directly.</h2>
+    <p class="kog-lede">No form, no call center, no lead-routing service selling your
+      information three times before it reaches an agent. These go to my phone.</p>
+
+    <div class="kog-actions">
+      <a class="kog-act" href="sms:+12816507592">
+        <span class="kog-do">Text</span>
+        <span class="kog-val">281-650-7592</span>
+        <span class="kog-note">Usually the fastest answer</span>
+      </a>
+      <a class="kog-act" href="tel:+12816507592">
+        <span class="kog-do">Call</span>
+        <span class="kog-val">281-650-7592</span>
+        <span class="kog-note">I answer my own phone</span>
+      </a>
+      <a class="kog-act" href="mailto:kelli.owens@thekorealtygroup.com">
+        <span class="kog-do">Email</span>
+        <span class="kog-val">kelli.owens@</span>
+        <span class="kog-note">thekorealtygroup.com</span>
+      </a>
+      <a class="kog-act" href="/kelli-owens.vcf" download="kelli-owens.vcf">
+        <span class="kog-do">Save my contact</span>
+        <span class="kog-val">Add to phone</span>
+        <span class="kog-note">Name, number, email — one tap</span>
+      </a>
+    </div>
+
+    <div class="kog-qr">
+      <img src="/img/qr-call-kelli.png" width="104" height="104"
+           alt="QR code that dials 281-650-7592">
+      <div>
+        <b>On a laptop?</b>
+        <span>Point your phone camera at this and it dials me.<br>No app, no typing the number.</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-legal"><div class="wrap">
+  <p class="legal">
+  <!-- TODO(kelli): add "· MLS #______ · Offered at $______." after the address once supplied. -->
+  1015 20th Street, Galveston, TX 77550.
+  All information is deemed reliable but is not guaranteed and should be independently verified.
+  Square footage, lot dimensions, year built and school district information are from the Galveston
+  Central Appraisal District and other third-party sources; buyers are encouraged to verify all
+  information to their own satisfaction. This is not an offer to sell or a solicitation of an offer
+  to buy where prohibited. Equal Housing Opportunity.
+  <br><br>
+  Texas law requires all real estate license holders to give the Information About
+  Brokerage Services notice to prospective buyers, tenants, sellers and landlords.
+  <br><br>
+  <span style="font-size:14px;line-height:1.9">
+    <a href="https://content.harstatic.com/pdf/TREC_CPN.pdf" target="_blank" rel="noopener">Texas Real Estate Commission Consumer Protection Notice</a>
+    &nbsp;&middot;&nbsp;
+    <a href="https://www.har.com/mhf/terms/dispBrokerInfo?sitetype=aws&amp;cid=616346" target="_blank" rel="noopener">Texas Real Estate Commission Information About Brokerage Services</a>
+  </span>
+</p>
+</div></footer>
+
+<div id="lb">
+  <button id="lbx" aria-label="Close">&times;</button>
+  <button id="lbp" aria-label="Previous">&#8249;</button>
+  <img id="lbi" alt="">
+  <button id="lbn" aria-label="Next">&#8250;</button>
+  <div id="lbc"></div>
+</div>
+
+<script>
+// [filename in img/, caption, wide?]. Stills from the 3D scan, 7/27/2023.
+// TODO(kelli): add an exterior as the first entry once photographed.
+const PHOTOS=[
+ ["01-living","Living room, looking through to the dining room",1],
+ ["02-living-2","Living room, second view, toward the entry hall",0],
+ ["03-dining","Dining room, looking into the kitchen",0],
+ ["04-dining-2","Dining room, looking back to the living room",0],
+ ["05-kitchen","Kitchen: island with seating, gas range, separate pantry",1],
+ ["06-kitchen-2","Kitchen, second view, island sink and dishwasher",0],
+ ["07-kitchen-3","Kitchen, third view, upper cabinets and pendant lights",0],
+ ["08-pantry","Pantry door and refrigerator wall",0],
+ ["09-dining-3","Dining room, third view, toward the living room",0],
+ ["10-powder-hall","Powder room off the entry hall; front door beyond",1],
+ ["11-upstairs-sitting","Upstairs bedroom furnished as a sitting room, opening to an adjoining bedroom",0],
+ ["12-upstairs-sitting-2","Upstairs sitting room, second view, two shuttered windows",0],
+ ["13-bedroom","Bedroom with brass bed, opening to a bathroom",1],
+ ["14-bath-vanity","Bathroom vanity and linen cabinet",0],
+ ["15-bath-shower","Bathroom with walk-in shower and patterned tile floor",0]
+];
+const g=document.getElementById('g');
+PHOTOS.forEach((p,i)=>{
+  const f=document.createElement('figure');
+  if(p[2])f.className='wide';
+  if(i>=4)f.classList.add('hid');
+  f.innerHTML='<img loading="lazy" src="./img/'+p[0]+'.jpg" alt="'+p[1]+'"><figcaption>'+p[1]+'</figcaption>';
+  f.onclick=()=>open_(i); g.appendChild(f);
+});
+const moreBtn=document.getElementById('more');
+document.getElementById('pcount').textContent=PHOTOS.length;
+moreBtn.textContent='See all '+PHOTOS.length+' photos';
+if(PHOTOS.length<=4)moreBtn.parentNode.remove();
+moreBtn.onclick=()=>{
+  g.querySelectorAll('figure.hid').forEach(f=>f.classList.remove('hid'));
+  moreBtn.parentNode.remove();
+};
+let cur=0;
+const lb=document.getElementById('lb'),lbi=document.getElementById('lbi'),lbc=document.getElementById('lbc');
+function open_(i){cur=i;paint();lb.classList.add('on');document.body.style.overflow='hidden'}
+function paint(){lbi.src='./img/'+PHOTOS[cur][0]+'.jpg';lbi.alt=PHOTOS[cur][1];
+  lbc.textContent=(cur+1)+' / '+PHOTOS.length+'  ·  '+PHOTOS[cur][1]}
+function close_(){lb.classList.remove('on');document.body.style.overflow=''}
+function step(d){if(cur<0)return;cur=(cur+d+PHOTOS.length)%PHOTOS.length;paint()}
+document.getElementById('lbx').onclick=close_;
+document.getElementById('lbp').onclick=e=>{e.stopPropagation();step(-1)};
+document.getElementById('lbn').onclick=e=>{e.stopPropagation();step(1)};
+lb.onclick=e=>{if(e.target===lb)close_()};
+document.addEventListener('keydown',e=>{if(!lb.classList.contains('on'))return;
+  if(e.key==='Escape')close_();if(e.key==='ArrowLeft')step(-1);if(e.key==='ArrowRight')step(1)});
+
+// Contact form -> POST /api/contact as JSON (vercel.json proxies it to the KO Realty Group endpoint).
+const form=document.getElementById('f'),fbtn=document.getElementById('f-btn'),fst=document.getElementById('f-status');
+form.addEventListener('submit',async e=>{
+  e.preventDefault();
+  const data=Object.fromEntries(new FormData(form).entries());
+  if(!data.name||!data.contact){fst.textContent='Name and an email or phone number, please.';return}
+  fbtn.disabled=true;fst.textContent='Sending…';
+  try{
+    const r=await fetch('/api/contact',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(data)});
+    const j=await r.json().catch(()=>({}));
+    if(r.ok&&j.ok){fst.textContent='Got it. I will text or email you shortly.';form.reset();}
+    else{fst.textContent='That did not go through. Text or call 281-650-7592 instead.';fbtn.disabled=false;}
+  }catch(err){fst.textContent='That did not go through. Text or call 281-650-7592 instead.';fbtn.disabled=false;}
+});
+</script>
+<nav class="kog-bar" aria-label="Contact Kelli">
+  <a class="kog-call" href="tel:+12816507592">Call</a>
+  <a class="kog-text" href="sms:+12816507592">Text</a>
+</nav>
+</body>
+</html>
