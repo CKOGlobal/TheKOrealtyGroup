@@ -45,6 +45,11 @@
         })
         .then(function (j) {
           if (j && j.ok) {
+            // Lead signal for Google Tag Manager (Meta Pixel, Google Ads, etc.).
+            (window.dataLayer = window.dataLayer || []).push({
+              event: 'generate_lead',
+              form_id: form.id || form.getAttribute('data-ghl') || 'contact'
+            });
             form.reset();
             setStatus(form, 'Got it. Kelli will get back to you personally.', true);
             if (btn) btn.textContent = 'Sent';
