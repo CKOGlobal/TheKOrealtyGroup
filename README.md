@@ -16,6 +16,9 @@ Live: https://thekorealtygroup.com (apex is canonical; `www` 308s to it)
 | `/guides/flood-zone-x-x500-ae-galveston-county.html` | `content/guides/flood-zone-x-vs-x500.md` |
 | `/guides/hoa-dues-what-they-actually-cover.html` | `content/guides/hoa-dues-what-they-cover.md` |
 | `/guides/why-square-footage-doesnt-match.html` | `content/guides/square-footage-doesnt-match.md` |
+| `/guides/ag-exemption-rollback-taxes-texas-acreage.html` | `content/guides/ag-exemption-rollback-taxes.md` |
+| `/guides/well-and-septic-texas-acreage.html` | `content/guides/well-and-septic-texas-acreage.md` |
+| `/guides/flood-zone-ae-elevation-certificate-freeboard.html` | `content/guides/flood-zone-ae-elevation-certificate.md` |
 
 Guides are the primary traffic driver. Everything else on the site exists to convert
 the people they bring in.
@@ -97,6 +100,12 @@ is served by both Clear Creek ISD and Dickinson ISD.
 
 ## Still open
 
+- **Acreage guides (ag/rollback, well & septic, AE & elevation certificate)** have no artwork yet:
+  no hero, no og:image, and text-only cards on the home and guides pages. Add
+  `img/guides/<slug>.jpg` + `<slug>-og.jpg`, then restore the hero/og tags. They link to
+  bayoucrossingestate.com (103 Avenue L); move to past tense when it closes.
+- `bayoucrossingestate/` is a staged copy of that listing site, excluded from this
+  deploy by `.vercelignore`. Delete it once `CKOGlobal/bayoucrossingestate` exists.
 - **Proof**: no testimonials, no closed-transaction count, no headshot. Nothing was
   invented; these need real inputs.
 - **Google Search Console**: not verified, sitemap not submitted.
