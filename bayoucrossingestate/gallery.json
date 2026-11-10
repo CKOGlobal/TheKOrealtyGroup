@@ -1,4 +1,0 @@
-{
-  "_readme": "Add one entry per photo. Upload the file to /img first. Required: file, category, alt. Optional: caption, chapter (gate|drive|bridge|house — places it in the arrival sequence), hero (true on exactly one photo), wide (true to span the full gallery row), width, height. Category must be one of: Aerials, Arrival, Grounds, Kitchen, Living, Primary Suite, Upstairs, Detached Suite. Gallery order is category order, then the order below. See README.md.",
-  "photos": []
-}

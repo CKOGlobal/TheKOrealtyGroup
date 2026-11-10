@@ -104,8 +104,6 @@ is served by both Clear Creek ISD and Dickinson ISD.
   no hero, no og:image, and text-only cards on the home and guides pages. Add
   `img/guides/<slug>.jpg` + `<slug>-og.jpg`, then restore the hero/og tags. They link to
   bayoucrossingestate.com (103 Avenue L); move to past tense when it closes.
-- `bayoucrossingestate/` is a staged copy of that listing site, excluded from this
-  deploy by `.vercelignore`. Delete it once `CKOGlobal/bayoucrossingestate` exists.
 - **Proof**: no testimonials, no closed-transaction count, no headshot. Nothing was
   invented; these need real inputs.
 - **Google Search Console**: not verified, sitemap not submitted.
