@@ -85,8 +85,9 @@ know nothing about.
 
 My current acreage listing, [103 Avenue L in Dickinson](https://bayoucrossingestate.com/), is a
 good example of why you read the paper. The water well that serves the house today sits on the
-adjoining tract, which is offered separately. A buyer of the 7.60 acres alone needs a new well
-drilled on it, and the listing says so plainly rather than leaving you to find it on a survey.
+adjoining tract, which is offered separately. If a buyer takes the 7.60 acres alone, the seller will
+have a new private well installed on it, and the listing says so plainly rather than leaving you
+to find it on a survey.
 
 ---
 
