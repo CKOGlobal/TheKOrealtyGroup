@@ -83,9 +83,10 @@ None of this is a reason to avoid well and septic. It is a reason to ask for pap
 a permit, a service history and a clean water test is a better answer than a city connection you
 know nothing about.
 
-My current acreage listing, [103 Avenue L in Dickinson](https://bayoucrossingestate.com/), is on a
-private well with a softener and reverse osmosis, and a septic system with a dedicated pump serving
-the addition. The listing says so in its first section, not its last.
+My current acreage listing, [103 Avenue L in Dickinson](https://bayoucrossingestate.com/), is a
+good example of why you read the paper. The water well that serves the house today sits on the
+adjoining tract, which is offered separately. A buyer of the 7.60 acres alone needs a new well
+drilled on it, and the listing says so plainly rather than leaving you to find it on a survey.
 
 ---
 
